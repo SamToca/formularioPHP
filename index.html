@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+
+    <div class="contenedor wow animate__bounceIn">
+        <h1>Formulario de Contacto</h1>
+            <form method="POST" action="correo.php">
+                <input type="text" class="control" name="nombre" id="nombre" placeholder="Ingrese su nombre" require>
+                <input type="text" class="control" name="apellido" id="apellido" placeholder="Ingrese su apellido" require>
+                <input type="email" class="control" name="email" id="email" placeholder="Ingrese su email" require>
+                <input type="text" class="control" name="mensaje" id="mensaje" placeholder="Ingrese su mensaje" require>
+                <input type="submit" value="Enviar" class="boton">
+                <!-- <button class="boton">Enviar</button> -->
+                <button class="boton">Borrar</button>
+            </form>
+    </div>
+
+   
+    
+
+    <script src="js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
+
+</body>
+</html>
